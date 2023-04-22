@@ -1,0 +1,1 @@
+export const getRequest = (payload) => setTimeout(() => payload(), 2000);

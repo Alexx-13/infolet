@@ -1,0 +1,35 @@
+@import '../../constants/variables.scss';
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: $medium 0;
+    
+    td, th {
+        border: 1px solid $greyA;
+        padding: 8px;
+    }
+
+    tr {
+        &:nth-child(even){
+            background-color: $greyB;
+        }
+
+        &:hover {
+            background-color: $secondaryHover;
+        }
+    }
+
+    th {
+        padding: 12px 8px;
+        text-align: left;
+        background-color: $secondary;
+        color: $tertiary;
+    }
+
+    tbody {
+        td {
+            text-align: left;
+        }
+    }
+}
